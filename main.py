@@ -77,7 +77,7 @@ with open(file = 'songs/song_urls.txt', mode = 'r') as s:
         song_urls.append(i.replace('\n', ''))
 
 
-mp3_class = Mp3_Class(download_path = r'C:\YoutubeVideos')#You can change this path as you wish
+mp3_class = Mp3_Class(download_path = r'C:\YoutubeSongs')#You can change this path as you wish
 
 for h in song_urls:
     mp3_class.download_video(video_url = h)
