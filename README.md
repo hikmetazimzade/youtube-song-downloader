@@ -1,5 +1,5 @@
 # Youtube-Song-Downloader
-## Note: You should download ffmpeg from https://ffmpeg.org/download.html in order to use the program
+## Note: You should download ffmpeg from https://github.com/BtbN/FFmpeg-Builds/releases/tag/latest in order to use the program
 ## Overview
 This project is a web automation tool designed to streamline the process of downloading songs. Users can list the names of the songs they want to download in a file named `song_names.txt` within the `songs` directory. The automation then searches for the URLs of these songs and downloads them to a specified path.
 
