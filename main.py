@@ -7,7 +7,7 @@ import time
 from download_mp3 import Mp3_Class
 from selenium.webdriver.chrome.options import Options
 
-
+#Fetching The Sons Here
 with open(file = 'songs/song_urls.txt', mode = 'w') as w:
     w.write('')
 
@@ -20,13 +20,13 @@ with open(file ='songs/song_names.txt', mode ='r', encoding ='utf-8') as m:
 
 options = Options()
 options.add_argument('headless=new') #It's used to hide the chrome
+#driver.set_window_position(-10000,0) #You can also use this to hide the chrome
 options.add_argument('--mute-audio')
 
 
 driver = webdriver.Chrome(options = options)
-#driver.set_window_position(-10000,0) #You can also use this to hide the chrome
-
 driver.get('https://www.youtube.com/')
+
 driver.implicitly_wait(10)
 time.sleep(1)
 
@@ -71,15 +71,16 @@ for song in song_names:
 
 driver.quit()
 print('Downloading Songs...')
+
 song_urls = []
 with open(file = 'songs/song_urls.txt', mode = 'r') as s:
     for i in s:
         song_urls.append(i.replace('\n', ''))
 
 
-mp3_class = Mp3_Class(download_path = r'C:\YoutubeSongs')#You can change this path as you wish
-
+mp3_class = Mp3_Class(download_path = r'C:\YoutubeSongs') #You can change this path as you wish
 for h in song_urls:
     mp3_class.download_video(video_url = h)
+
 
 print('Successfully downloaded songs!')
