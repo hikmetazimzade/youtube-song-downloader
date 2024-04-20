@@ -15,7 +15,7 @@ class Mp3_Class:
             'youtube-dl',
             '--extract-audio',
             '--audio-format', 'mp3',
-            '--ffmpeg-location', r'C:\Users\your_username\Downloads\ffmpeg-master-latest-win64-gpl\ffmpeg-master-latest-win64-gpl\bin',
+            '--ffmpeg-location', r'C:\Users\your_username\Downloads\ffmpeg-master-latest-win64-gpl\ffmpeg-master-latest-win64-gpl\bin', #Write it based on where you installed it
             '-o', os.path.join(self.download_path, '%(title)s.%(ext)s'),
             video_url
         ]
