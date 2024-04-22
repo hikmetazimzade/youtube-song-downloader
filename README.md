@@ -12,3 +12,4 @@ This project is a web automation tool designed to streamline the process of down
 1. **List Songs**: Write down the names of the songs you want to download in `song_names.txt` located in the `songs` directory.
 2. **Run Automation**: Execute the automation script. It will read the song names, search for their URLs, and start the download process.
 3. **Download**: The songs will be downloaded to the chosen path. Ensure you have sufficient permissions for the chosen directory.
+
